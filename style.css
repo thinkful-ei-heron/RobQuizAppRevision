@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Favorit;
+    src: url(favorit-regular.otf);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: Favorit, Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    display: flex;
+
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+    padding: 2rem 5rem;
+    background-color: #D3D3D3;
+  }
+  
+  legend {
+    font-size: 3rem;
+    padding-bottom: 50px;
+  }
+  
+  label {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  [type='checkbox'],
+  [type='radio'] {
+    margin: 1rem;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 2rem 3rem;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 0.5rem;
+  }
+  
+  .emoji {
+    font-size: 4rem;
+  }
+  
+  .state {
+    text-align: center;
+    /* z-index: 1;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;*/
+  }
+  
+  .state-inner {
+    padding: 1rem 2rem;
+  }
+  
+  @media screen and (max-width: 750px) {
+    h1 {
+      font-size: 4rem;
+    }
+  
+    h2,
+    legend {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    .state-inner {
+      padding: 0.5rem 1rem;
+    }
+  
+    .header {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
